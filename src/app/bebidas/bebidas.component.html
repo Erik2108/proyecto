@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <a routerLink="/pedido" class="nav-link">Volver a Categoría</a>
+    <a routerLink="/registrar-bebida" class="nav-link" (click)=" enviarDato()">Registrar Bebida</a>
+  </div>
+  <div class="navbar-right">
+    <a routerLink="/login" class="nav-link">Cerrar Sesión</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2 class="titulo">Menú de Bebidas</h2>
+  <div *ngIf="categoria.length > 0; else noProductos" class="card-container">
+      <div *ngFor="let prod of categoria">
+          <div class="card">
+              <img [src]="prod.imagen_url" alt="{{ prod.nombre }}" class="card-img"> 
+              <div class="card-body">
+                  <h3 class="card-title">{{ prod.nombre }}</h3>
+                  <p class="card-text">{{ prod.descripcion }}</p>
+                  <p class="card-price">$ {{ prod.precio }}</p>
+                  <p class="card-category">{{ prod.categoria }}</p>  
+                  <button class="button" type="submit" (click)="eliminarProducto(prod.id_producto)">Eliminar</button>          
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  
+<ng-template #noProductos>
+  <p>No hay productos disponibles.</p>
+</ng-template>
+
+<div class="popup-overlay" *ngIf="mostrarPopup">
+  <div class="popup-content">
+      <p>Producto eliminado con exito</p>
+      <button (click)="cerrarPopup()">Cerrar</button>
+  </div>
+</div>

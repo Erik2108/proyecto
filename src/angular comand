@@ -1,0 +1,16 @@
+/*
+ng g service /services/company
+
+
+ng g c nombrecomponente 
+ng serve arrancar el servidor 
+
+1. crear componente
+2. agregarlo en app.routes.ts
+3. agregarlo en app.modules.ts
+4. quitar del componente -> 
+    standalone: true
+    imports: [],
+4. personalizar mi componente (html,css)
+
+*/

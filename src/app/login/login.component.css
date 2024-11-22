@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Fondo de la página en un tono azul claro */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del login */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Caja del formulario de login */
+.login-container {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Imagen del logo */
+.image-size {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Título del formulario */
+h2 {
+    color: #007bb5; /* Azul fuerte */
+    margin-bottom: 20px;
+}
+
+/* Grupos de input */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Etiquetas de los inputs */
+.form-label {
+    font-size: 14px;
+    color: #007bb5; /* Azul fuerte */
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bb5; /* Borde azul */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Input en estado de error */
+.form-control.ng-invalid.ng-touched {
+    border-color: #ff6f61; /* Color rojo cuando hay error */
+}
+
+/* Mensajes de error */
+.alert {
+    color: #ff6f61; /* Rojo para errores */
+    font-size: 12px;
+}
+
+/* Botón de login */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo del botón cuando está habilitado */
+.btn-enabled {
+    background-color: #007bb5; /* Azul fuerte */
+    color: white;
+}
+
+/* Estilo del botón cuando está deshabilitado */
+.btn-disabled {
+    background-color: #b3e5fc; /* Azul claro */
+    color: #fff;
+    cursor: not-allowed;
+}
+
+/* Link de recuperar contraseña */
+.milito a {
+    display: block;
+    margin-top: 10px;
+    color: #007bb5; /* Azul fuerte */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Efecto hover en el link */
+.milito a:hover {
+    text-decoration: underline;
+}
+
+/* Estado de alerta (por ejemplo, usuario inactivo o error de servicio) */
+.alert {
+    color: #ff6f61; /* Rojo */
+    font-size: 14px;
+    margin-top: 10px;
+}

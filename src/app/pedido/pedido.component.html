@@ -1,0 +1,36 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    
+
+  </div>
+  <div class="navbar-right">
+    <a routerLink="/login" class="nav-link">Cerrar Sesión</a>
+  </div>
+</nav>
+
+<h2 class="titulo">Seleccione Categoría</h2>
+<div class="container">
+
+  <div class="card" (click)="bebidas()">
+    <img class="img1">
+    <div class="card-body">
+      <h3>Bebidas</h3>
+    </div>
+  </div>
+
+
+  <div class="card" (click)="comidaChatarra()">
+    <img class="img2">
+    <div class="card-body">
+      <h3>Comida Chatarra</h3>
+    </div>
+  </div>
+
+
+  <div class="card" (click)="comidaVegetariana()">
+    <img class="img3">
+    <div class="card-body">
+      <h3>Comida Vegetariana</h3>
+    </div>
+  </div>
+</div>

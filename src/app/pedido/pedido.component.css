@@ -1,0 +1,113 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card .img1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../../assets/img/bebidas.png');
+  }
+  .card .img2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../../assets/img/chatarra.jpg');
+  }
+  .card .img3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../../assets/img/vegetariana.jpg');
+  }
+  
+  .card img {
+    
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #0288d1;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-body h3 {
+    color: #01579b;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  .titulo {
+    font-size: 28px;
+    color: #0288d1;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  /* Estilos del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff; /* Color azul */
+  padding: 10px;
+  color: white;
+}
+
+.navbar-left {
+  font-size: 18px;
+}
+
+.navbar-right {
+  font-size: 18px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Color amarillo al pasar el ratón */
+}
+ 
